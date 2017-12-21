@@ -20,5 +20,6 @@ before_script:
   - "sh -e /etc/init.d/xvfb start"
   - sleep 3
   - fluxbox >/dev/null 2>&1 &
- notifications:
+  
+notifications:
     slack: askmupw:iUQL74ogRNT7A8YOTRcvPRQR
