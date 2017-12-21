@@ -4,8 +4,8 @@
   "description": "An example of how to run TestCafe tests in the cloud using Firefox and Chrome with Travis CI.",
   "main": "server.js",
   "scripts": {
-    "test": "testcafe chrome,firefox tests/index-test.js --app \"node server.js\""
-  },
+    "test": "testcafe chrome,firefox tests/index-test.js --app \"node server.js\"",
+   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DevExpress/testcafe.git"
@@ -22,5 +22,9 @@
   },
   "devDependencies": {
     "testcafe": "*"
+  },
+  "jest": {
+  "coverageDirectory": "./coverage/",
+  "collectCoverage": true
   }
 }
